@@ -76,8 +76,9 @@ Mandatory arguments to long options are mandatory for short options too.
                                shell-escape, shell-escape-always, c, escape
                                (overrides QUOTING_STYLE environment variable)
   -r, --reverse              reverse order while sorting
+                             將文件以相反次序顯示(原定依英文字母次序)
   -R, --recursive            list subdirectories recursively
-  若目录下有文件，则以下之文件亦皆依序列出
+                             若目錄下有文件，則以下之文件亦皆依序列出
   -s, --size                 print the allocated size of each file, in blocks
   -S                         sort by file size, largest first
       --sort=WORD            sort by WORD instead of name: none (-U), size (-S),
@@ -88,6 +89,7 @@ Mandatory arguments to long options are mandatory for short options too.
                                as sort key if --sort=time (newest first)
       --time-style=TIME_STYLE  time/date format with -l; see TIME_STYLE below
   -t                         sort by modification time, newest first
+                             将文件依建立时间之先后次序列出
   -T, --tabsize=COLS         assume tab stops at each COLS instead of 8
   -u                         with -lt: sort by, and show, access time;
                                with -l: show access time and sort by name;
