@@ -22,17 +22,24 @@ With no FILE, or when FILE is -, read standard input.
   -n, --number             number all output lines
       數字編號              由1開始给所有輸出的行數編號
   -s, --squeeze-blank      suppress repeated empty output lines
+                           禁止重复的空输出行
   -t                       equivalent to -vT
+                           相當於 -vT
   -T, --show-tabs          display TAB characters as ^I
+                           顯示制表符为^I
   -u                       (ignored)
   -v, --show-nonprinting   use ^ and M- notation, except for LFD and TAB
+      顯示非打印使用^和M-符号，除了LFD和制表符
       --help     display this help and exit
+      帮助       显示此帮助并退出
       --version  output version information and exit
-
+      版本       輸出版本信息並退出。
 Examples:
+例子:
   cat f - g  Output f's contents, then standard input, then g's contents.
+             輸出f的內容，然後是標準輸入，然後是g的內容。
   cat        Copy standard input to standard output.
-
+             將標準輸入複製到標準輸出。
 GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
 Full documentation at: <https://www.gnu.org/software/coreutils/cat>
 or available locally via: info '(coreutils) cat invocation'
