@@ -14,9 +14,11 @@ With no FILE, or when FILE is -, read standard input.
   -A, --show-all           equivalent to -vET
       全部顯示              相當於 -vET
   -b, --number-nonblank    number nonempty output lines, overrides -n
+      數字-非空的           和-n相似，只不過對於空白行不編號
   -e                       equivalent to -vE
   -E, --show-ends          display $ at end of each line
   -n, --number             number all output lines
+      數字                 由1開始给所有輸出的行數編號
   -s, --squeeze-blank      suppress repeated empty output lines
   -t                       equivalent to -vT
   -T, --show-tabs          display TAB characters as ^I
