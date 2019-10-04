@@ -21,19 +21,25 @@ cd: cd [-L|[-P [-e]] [-@]] [dir]
     If the directory is not found, and the shell option `cdable_vars' is set,
     the word is assumed to be  a variable name.  If that variable has a value,
     its value is used for DIR.
+    如果沒有找到目錄，並且設置了shell選項' cdable vars'，則假定該單詞是一個變量名。
+    如果該變量有一个值，則將其值用於DIR。
     
     Options:
+    設置:
       -L	force symbolic links to be followed: resolve symbolic
     		links in DIR after processing instances of `..'
+            强制使用符號鏈接:在處理' ..'實例後解析DIR中的符號鏈接
       -P	use the physical directory structure without following
     		symbolic links: resolve symbolic links in DIR before
     		processing instances of `..'
+            使用不带符號鏈接的物理目錄结構:在處理' ..'實例之前解析DIR中的符號鏈接
       -e	if the -P option is supplied, and the current working
     		directory cannot be determined successfully, exit with
     		a non-zero status
+            如果提供了-P選項，並且無法成功確定當前工作目錄，則以非零狀態退出
       -@	on systems that support it, present a file with extended
     		attributes as a directory containing the file attributes
-    
+            在支持它的系统上，將具有擴展屬性的文件顯示为包含文件屬性的目錄
     The default is to follow symbolic links, as if `-L' were specified.
     `..' is processed by removing the immediately previous pathname component
     back to a slash or the beginning of DIR.
