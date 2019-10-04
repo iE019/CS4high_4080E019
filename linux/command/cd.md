@@ -37,7 +37,6 @@ cd: cd [-L|[-P [-e]] [-@]] [dir]
     Exit Status:
     Returns 0 if the directory is changed, and if $PWD is set successfully when
     -P is used; non-zero otherwise.
-root@kali:~# 
 
 
 ```
