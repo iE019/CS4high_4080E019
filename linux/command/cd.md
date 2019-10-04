@@ -43,10 +43,13 @@ cd: cd [-L|[-P [-e]] [-@]] [dir]
     The default is to follow symbolic links, as if `-L' were specified.
     `..' is processed by removing the immediately previous pathname component
     back to a slash or the beginning of DIR.
+    默認是跟随符號鏈接，就像指定了' -L'一樣。“. .通過將前一個路徑名组件删除回一个斜槓或DIR開頭來處理。
     
     Exit Status:
+    退出狀態:
     Returns 0 if the directory is changed, and if $PWD is set successfully when
     -P is used; non-zero otherwise.
+    如果目錄改變，返回0;如果使用-P成功設置$PWD，返回0;非零。
 
 
 ```
