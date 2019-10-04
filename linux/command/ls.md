@@ -1,4 +1,4 @@
-# ls
+# ls 用於顯示指定工作目錄下之内容（列出目前工作目錄所含之文件及子目錄)。
 
 ```
 ls --help
@@ -8,7 +8,9 @@ Sort entries alphabetically if none of -cftuvSUX nor --sort is specified.
 
 Mandatory arguments to long options are mandatory for short options too.
   -a, --all                  do not ignore entries starting with .
+  顯示所有文件及目錄 (ls內定將文件名或目錄名稱開頭為"."的視為隱藏檔，不會列出)
   -A, --almost-all           do not list implied . and ..
+  同 -a ，但不列出 "." (目前目錄) 及 ".." (父目錄)
       --author               with -l, print the author of each file
   -b, --escape               print C-style escapes for nongraphic characters
       --block-size=SIZE      with -l, scale sizes by SIZE when printing them;
@@ -29,6 +31,7 @@ Mandatory arguments to long options are mandatory for short options too.
       --format=WORD          across -x, commas -m, horizontal -x, long -l,
                                single-column -1, verbose -l, vertical -C
       --full-time            like -l --time-style=full-iso
+      在列出的文件名称后加一符号；例如可执行档则加 "*", 目录则加 "/"
   -g                         like -l, but do not list owner
       --group-directories-first
                              group directories before files;
@@ -54,6 +57,7 @@ Mandatory arguments to long options are mandatory for short options too.
   -k, --kibibytes            default to 1024-byte blocks for disk usage;
                                used only with -s and per directory totals
   -l                         use a long listing format
+  除文件名稱外，亦將文件型態、權限、擁有者、文件大小等資訊詳细列出
   -L, --dereference          when showing file information for a symbolic
                                link, show information for the file the link
                                references rather than for the link itself
@@ -73,6 +77,7 @@ Mandatory arguments to long options are mandatory for short options too.
                                (overrides QUOTING_STYLE environment variable)
   -r, --reverse              reverse order while sorting
   -R, --recursive            list subdirectories recursively
+  若目录下有文件，则以下之文件亦皆依序列出
   -s, --size                 print the allocated size of each file, in blocks
   -S                         sort by file size, largest first
       --sort=WORD            sort by WORD instead of name: none (-U), size (-S),
