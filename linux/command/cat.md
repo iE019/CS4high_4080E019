@@ -1,14 +1,18 @@
-# cat
+# cat 用於連結文件並打印到標準輸出設備上
 
 ```
 
 cat --help
 Usage: cat [OPTION]... [FILE]...
+用法:cat[选项]…[文件]…
 Concatenate FILE(s) to standard output.
+將文件連接到標準输出。
 
 With no FILE, or when FILE is -, read standard input.
+如果沒有文件，或者當文件为-时，讀取標準输入。
 
   -A, --show-all           equivalent to -vET
+      全部顯示              相當於 -vET
   -b, --number-nonblank    number nonempty output lines, overrides -n
   -e                       equivalent to -vE
   -E, --show-ends          display $ at end of each line
