@@ -1,18 +1,22 @@
-# cd
+# cd 切換當前目錄至其它目錄
 
 ```
 
 cd --help
 cd: cd [-L|[-P [-e]] [-@]] [dir]
     Change the shell working directory.
+    更改shell工作目录
     
     Change the current directory to DIR.  The default DIR is the value of the
     HOME shell variable.
+    将當前目錄更改為DIR。默認的DIR是HOME shell變量的值
     
     The variable CDPATH defines the search path for the directory containing
     DIR.  Alternative directory names in CDPATH are separated by a colon (:).
     A null directory name is the same as the current directory.  If DIR begins
     with a slash (/), then CDPATH is not used.
+    變量CDPATH定義包含DIR的目錄的搜索路徑。CDPATH中的其它目錄名由冒號分隔(:)。
+    空目錄名與當前目錄相同。如果DIR以斜槓開頭，則不使用CDPATH。
     
     If the directory is not found, and the shell option `cdable_vars' is set,
     the word is assumed to be  a variable name.  If that variable has a value,
