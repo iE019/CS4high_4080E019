@@ -1,4 +1,4 @@
-# ps
+# ps 用於顯示當前進程 (process) 的狀態
 
 ```
 
@@ -13,5 +13,32 @@ Usage:
 
 For more details see ps(1).
 
+ps 的参数非常多, 在此僅列出幾個常用的參數並大略介绍涵義
+-A 列出所有的行程
+-w 顯示加宽可以顯示较多的資訊
+-au 顯示较详细的资讯
+-aux 顯示所有包含其他使用者的行程
+au(x) 輸出格式 :
+USER PID %CPU %MEM VSZ RSS TTY STAT START TIME COMMAND
+USER: 行程擁有者
+PID: pid
+%CPU: 占用的 CPU 使用率
+%MEM: 占用的記憶體使用率
+VSZ: 占用的虛擬記憶體大小
+RSS: 占用的記憶體大小
+TTY: 终端的次要装置号码 (minor device number of tty)
+STAT: 該行程的狀態:
+D: 無法中段的休眠狀態 (通常 IO 的进程)
+R: 正在執行中
+S: 静止狀態
+T: 暫停执行
+Z: 不存在但暫時無法消除
+W: 沒有足够的記憶體分页可分配
+<: 高優先序的行程
+N: 低優先序的行程
+L: 有記憶體分頁分配並鎖在記憶體內 (時實系统或捱A I/O)
+START: 行程開始時間
+TIME: 執行的时间
+COMMAND:所執行的指令
 
 ```
