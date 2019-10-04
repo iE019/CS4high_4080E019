@@ -1,4 +1,5 @@
 # ps 用於顯示當前進程 (process) 的狀態
+
 ```
 
 ps --help
