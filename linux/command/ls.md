@@ -45,23 +45,35 @@ Mandatory arguments to long options are mandatory for short options too.
   -g                         like -l, but do not list owner
       --group-directories-first
                              group directories before files;
+                             文件之前的组目录
                                can be augmented with a --sort option, but any
                                use of --sort=none (-U) disables grouping
+                              可以使用——sort选项进行扩展，但是使用——sort=none (-U)会禁用分组
   -G, --no-group             in a long listing, don't print group names
+                             在長列表中，不要打印组名
   -h, --human-readable       with -l and -s, print sizes like 1K 234M 2G etc.
+                             具有-l和-s，打印尺寸为1K 234M 2G等。
       --si                   likewise, but use powers of 1000 not 1024
+                             同樣的，使用1000的幂而不是1024
   -H, --dereference-command-line
                              follow symbolic links listed on the command line
+                             遵循命令行中列出的符号链接
       --dereference-command-line-symlink-to-dir
                              follow each command line symbolic link
+                             遵循每個命令行符號链接
                                that points to a directory
+                               它指向一个目录
       --hide=PATTERN         do not list implied entries matching shell PATTERN
                                (overridden by -a or -A)
+                             不要列出与shell模式匹配的隐含项(被-a或-a覆盖)
       --hyperlink[=WHEN]     hyperlink file names; WHEN can be 'always'
                                (default if omitted), 'auto', or 'never'
+                               超链接文件名稱;WHEN可以是'always'(省略時默認)、'auto'或'never'
       --indicator-style=WORD  append indicator with style WORD to entry names:
                                none (default), slash (-p),
                                file-type (--file-type), classify (-F)
+                             将带有样式词的指示符附加到条目名称:none(默认)、slash (-p)、
+                             file-type(—file-type)、classification (-F)
   -i, --inode                print the index number of each file
    顯示文件索引節點號（inode）。一個索引節點代表一個文件；
   -I, --ignore=PATTERN       do not list implied entries matching shell PATTERN
@@ -75,22 +87,31 @@ Mandatory arguments to long options are mandatory for short options too.
                                link, show information for the file the link
                                references rather than for the link itself
   -m                         fill width with a comma separated list of entries
-   用“,”號區隔每個文件和目錄的名稱；
+                             用“,”號區隔每個文件和目錄的名稱；
   -n, --numeric-uid-gid      like -l, but list numeric user and group IDs
-   以用戶識別碼和群組識別碼替代其名稱；
+                             以用戶識別碼和群組識別碼替代其名稱；
   -N, --literal              print entry names without quoting
+                             打印条目名稱，不带引號
   -o                         like -l, but do not list group information
+                             類似-l，但不要列出组信息  
   -p, --indicator-style=slash
                              append / indicator to directories
+                             添加/指标目录
   -q, --hide-control-chars   print ? instead of nongraphic characters
+                             打印?而不是非图形字符
       --show-control-chars   show nongraphic characters as-is (the default,
                                unless program is 'ls' and output is a terminal)
+                             按原样显示非图形字符(默认，除非程序是“ls”，输出是终端)
   -Q, --quote-name           enclose entry names in double quotes
                              將條目名稱放在双引号中
       --quoting-style=WORD   use quoting style WORD for entry names:
+                              对条目名称使用引用样式词
                                literal, locale, shell, shell-always,
+                               文字，语言环境，shell，总是shell
                                shell-escape, shell-escape-always, c, escape
                                (overrides QUOTING_STYLE environment variable)
+                              shell-escape、shell-escape-always、c、escape
+                              (覆盖引用样式环境变量)
   -r, --reverse              reverse order while sorting
                              以文件名反序排列並輸出目錄內容列表；
   -R, --recursive            list subdirectories recursively
@@ -126,12 +147,17 @@ Mandatory arguments to long options are mandatory for short options too.
   -X                         sort alphabetically by entry extension
                              按條目擴展名按字母顺序排序
   -Z, --context              print any security context of each file
+                             打印每個文件的任何安全上下文
   -1                         list one file per line.  Avoid '\n' with -q or -b
+                             每行列出一个文件。避免使用-q或-b的'\n'
       --help     display this help and exit
+                 顯示此帮助並退出
       --version  output version information and exit
+                 輸出版本信息並退出。
 
 The SIZE argument is an integer and optional unit (example: 10K is 10*1024).
 Units are K,M,G,T,P,E,Z,Y (powers of 1024) or KB,MB,... (powers of 1000).
+SIZE参数是一个整数和可选单元(例如:10K是10*1024)。单位是K,M,G,T,P,E,Z,Y(1024的幂)或KB,MB，…(1000的)。
 
 The TIME_STYLE argument can be full-iso, long-iso, iso, locale, or +FORMAT.
 FORMAT is interpreted like in date(1).  If FORMAT is FORMAT1<newline>FORMAT2,
