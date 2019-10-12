@@ -27,12 +27,12 @@ cd: cd [-L|[-P [-e]] [-@]] [dir]
     Options:
     設置:
       -L	force symbolic links to be followed: resolve symbolic
-    		links in DIR after processing instances of `..'
-            强制使用符號鏈接:在處理' ..'實例後解析DIR中的符號鏈接
+    		links in DIR after processing instances of 
+            如果要切換的目標目錄是一個符號的連接，直接切換到字符連接名代表的目錄，而非符號連接所指向的目標目錄。
       -P	use the physical directory structure without following
     		symbolic links: resolve symbolic links in DIR before
     		processing instances of `..'
-            使用不带符號鏈接的物理目錄结構:在處理' ..'實例之前解析DIR中的符號鏈接
+            如果要切換到的目標目錄是一個符號連接，直接切換到符號連接指向的目標目錄
       -e	if the -P option is supplied, and the current working
     		directory cannot be determined successfully, exit with
     		a non-zero status
@@ -51,5 +51,12 @@ cd: cd [-L|[-P [-e]] [-@]] [dir]
     -P is used; non-zero otherwise.
     如果目錄改變，返回0;如果使用-P成功設置$PWD，返回0;非零。
 
+
+cd 進入用戶主目錄；
+cd ~ 進入用戶主目錄；
+cd - 返回進入此目錄之前所在的目錄；
+cd .. 返回上級目錄（若當前目錄為“/“，則執行完後還在“/"；".."為上級目錄的意思）；
+cd ../.. 返回上兩級目錄；
+cd !$ 把上個命令的參數作為cd參數使用。
 
 ```
