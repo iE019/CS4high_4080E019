@@ -12,10 +12,13 @@ Mandatory arguments to long options are mandatory for short options too.
   -A, --almost-all           do not list implied . and ..
   同 -a ，但不列出 "." (目前目錄) 及 ".." (父目錄)
       --author               with -l, print the author of each file
+                             使用-l，打印每个文件的作者
   -b, --escape               print C-style escapes for nongraphic characters
+                             打印非圖形字符的c樣式轉義
       --block-size=SIZE      with -l, scale sizes by SIZE when printing them;
-                               e.g., '--block-size=M'; see SIZE format below
+                               e.g., '--block-size=M'; see SIZE format below                          
   -B, --ignore-backups       do not list implied entries ending with ~
+                             不要列出以?结尾的隐含条目
   -c                         with -lt: sort by, and show, ctime (time of last
                                modification of file status information);
                                with -l: show ctime and sort by name;
@@ -57,7 +60,7 @@ Mandatory arguments to long options are mandatory for short options too.
   -k, --kibibytes            default to 1024-byte blocks for disk usage;
                                used only with -s and per directory totals
   -l                         use a long listing format
-  除文件名稱外，亦將文件型態、權限、擁有者、文件大小等資訊詳细列出
+                            除文件名稱外，亦將文件型態、權限、擁有者、文件大小等資訊詳细列出
   -L, --dereference          when showing file information for a symbolic
                                link, show information for the file the link
                                references rather than for the link itself
@@ -89,16 +92,25 @@ Mandatory arguments to long options are mandatory for short options too.
                                as sort key if --sort=time (newest first)
       --time-style=TIME_STYLE  time/date format with -l; see TIME_STYLE below
   -t                         sort by modification time, newest first
-                             将文件依建立时间之先后次序列出
+                             將文件依建立时间之先後次序列出
   -T, --tabsize=COLS         assume tab stops at each COLS instead of 8
+                             假設制表符在每個COLS處停止，而不是8
   -u                         with -lt: sort by, and show, access time;
+                             排序，顯示，訪問時間
                                with -l: show access time and sort by name;
+                               使用-l:顯示訪問時間並按名稱排序
                                otherwise: sort by access time, newest first
+                               否则:按访问时间排序，最新优先  
   -U                         do not sort; list entries in directory order
+                            不排序;按目录顺序列出条目
   -v                         natural sort of (version) numbers within text
+                             文本中的(版本)數字的自然排序
   -w, --width=COLS           set output width to COLS.  0 means no limit
+                             將輸出寬度設置為COLS。0表示沒有限制
   -x                         list entries by lines instead of by columns
+                             按行而不是按列列出条目
   -X                         sort alphabetically by entry extension
+                             按條目擴展名按字母顺序排序
   -Z, --context              print any security context of each file
   -1                         list one file per line.  Avoid '\n' with -q or -b
       --help     display this help and exit
