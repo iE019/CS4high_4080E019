@@ -14,7 +14,7 @@ Mandatory arguments to long options are mandatory for short options too.
       --author               with -l, print the author of each file
                              使用-l，打印每个文件的作者
   -b, --escape               print C-style escapes for nongraphic characters
-                             打印非圖形字符的c樣式轉義
+                            將文件中的不可輸出的字符以反斜線“”加字符編碼的方式輸出；
       --block-size=SIZE      with -l, scale sizes by SIZE when printing them;
                                e.g., '--block-size=M'; see SIZE format below                          
   -B, --ignore-backups       do not list implied entries ending with ~
@@ -23,18 +23,25 @@ Mandatory arguments to long options are mandatory for short options too.
                                modification of file status information);
                                with -l: show ctime and sort by name;
                                otherwise: sort by ctime, newest first
+   與“-lt”選項連用時，按照文件狀態時間排序輸出目錄內容，排序的依據是文件的索引節點中的ctime字段。
+   與“-l”選項連用時，則排序的一句是文件的狀態改變時間；                            
   -C                         list entries by columns
       --color[=WHEN]         colorize the output; WHEN can be 'always' (default
                                if omitted), 'auto', or 'never'; more info below
   -d, --directory            list directories themselves, not their contents
+                            僅顯示目錄名，而不顯示目錄下的內容列表。顯示符號鏈接文件本身，
+                            而不顯示其所指向的目錄列表；
   -D, --dired                generate output designed for Emacs' dired mode
+                            生成為Emacs dired模式設計的輸出
   -f                         do not sort, enable -aU, disable -ls --color
+                            此參數的效果和同時指定“aU”參數相同，並關閉“lst”參數的效果；
   -F, --classify             append indicator (one of */=>@|) to entries
       --file-type            likewise, except do not append '*'
       --format=WORD          across -x, commas -m, horizontal -x, long -l,
                                single-column -1, verbose -l, vertical -C
       --full-time            like -l --time-style=full-iso
-      在列出的文件名称后加一符号；例如可执行档则加 "*", 目录则加 "/"
+      在每個輸出項後追加文件的類型標識符，具體含義：“*”表示具有可執行權限的普通文件，“/”表示目錄，
+      “@”表示符號鏈接，“|”表示命令管道FIFO，“=”表示sockets套接字。當文件為普通文件時，不輸出任何標識符；
   -g                         like -l, but do not list owner
       --group-directories-first
                              group directories before files;
@@ -56,16 +63,21 @@ Mandatory arguments to long options are mandatory for short options too.
                                none (default), slash (-p),
                                file-type (--file-type), classify (-F)
   -i, --inode                print the index number of each file
+   顯示文件索引節點號（inode）。一個索引節點代表一個文件；
   -I, --ignore=PATTERN       do not list implied entries matching shell PATTERN
   -k, --kibibytes            default to 1024-byte blocks for disk usage;
+                             以KB（千字節）為單位顯示文件大小；
                                used only with -s and per directory totals
+                               僅用於-s和每個目錄彙總
   -l                         use a long listing format
-                            除文件名稱外，亦將文件型態、權限、擁有者、文件大小等資訊詳细列出
+                             除文件名稱外，亦將文件型態、權限、擁有者、文件大小等資訊詳细列出
   -L, --dereference          when showing file information for a symbolic
                                link, show information for the file the link
                                references rather than for the link itself
   -m                         fill width with a comma separated list of entries
+   用“,”號區隔每個文件和目錄的名稱；
   -n, --numeric-uid-gid      like -l, but list numeric user and group IDs
+   以用戶識別碼和群組識別碼替代其名稱；
   -N, --literal              print entry names without quoting
   -o                         like -l, but do not list group information
   -p, --indicator-style=slash
@@ -74,15 +86,17 @@ Mandatory arguments to long options are mandatory for short options too.
       --show-control-chars   show nongraphic characters as-is (the default,
                                unless program is 'ls' and output is a terminal)
   -Q, --quote-name           enclose entry names in double quotes
+                             將條目名稱放在双引号中
       --quoting-style=WORD   use quoting style WORD for entry names:
                                literal, locale, shell, shell-always,
                                shell-escape, shell-escape-always, c, escape
                                (overrides QUOTING_STYLE environment variable)
   -r, --reverse              reverse order while sorting
-                             將文件以相反次序顯示(原定依英文字母次序)
+                             以文件名反序排列並輸出目錄內容列表；
   -R, --recursive            list subdirectories recursively
-                             若目錄下有文件，則以下之文件亦皆依序列出
+                             遞歸處理，將指定目錄下的所有文件及子目錄一併處理；
   -s, --size                 print the allocated size of each file, in blocks
+                             顯示文件和目錄的大小，以區塊為單位；
   -S                         sort by file size, largest first
       --sort=WORD            sort by WORD instead of name: none (-U), size (-S),
                                time (-t), version (-v), extension (-X)
@@ -100,7 +114,7 @@ Mandatory arguments to long options are mandatory for short options too.
                                with -l: show access time and sort by name;
                                使用-l:顯示訪問時間並按名稱排序
                                otherwise: sort by access time, newest first
-                               否则:按访问时间排序，最新优先  
+                                否则:按访问时间排序，最新优先  
   -U                         do not sort; list entries in directory order
                             不排序;按目录顺序列出条目
   -v                         natural sort of (version) numbers within text
