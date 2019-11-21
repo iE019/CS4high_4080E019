@@ -396,24 +396,24 @@ C:\Users\KSUIE>tracert www.ksu.edu.tw
 
 # Transport層協定:TCP(可靠的reliable) vs UDP (不可靠的unreliable)
 ```
-何謂(可靠的reliable) vs (不可靠的unreliable)?
+何謂"TCP(傳輸控制協定)可靠的reliable" vs "UDP(用戶資料包協定)不可靠的unreliable" ?
 答:
-"可靠的reliable"是確保我們可以正確的接收數據，不讓數據丟失或順序混亂。
-例:有了TCP就可以完整的看到網頁，沒有遺漏文字或圖片，也沒有逆向或亂序。
+"TCP(傳輸控制協定)可靠的reliable"是確保我們可以正確的接收資料，並保證資料傳遞過程中，不會讓資料丟失或順序混亂。
+例:有了TCP就可以完整的看到網頁，不會遺漏文字或圖片，也不會使網頁內容逆向或亂序。
+例外狀況:如果資料包丟失，並且沒有達到接收方，那麼TCP將重新傳送它。
 
-不可靠的unreliable
-不保證資料被無失真傳輸，甚至傳輸與否。
-例:UDP協定是一種不可靠協定。
+"UDP不可靠的unreliable"是不保證資料的傳輸。
+發送方不在意接收方是否收到資料，因為它只發送資料，不在意結果。
 
-都(不可靠的unreliable)了,為何要用??
+都"UDP不可靠的unreliable"了,為何要用??
 答:
-UDP協定是一種不可靠協定，經常在電腦遊戲或其他看重速度而允許少量資料損失的場合。
+因為UDP比TCP，經常在電腦遊戲或其他看重速度而允許少量資料損失的場合，就會使用。
 
 如何達到(可靠的reliable)?<----封包格式的設計
 1.電腦發送一條名為SYN的訊息。
 2.接收電腦將返回確認訊息(SYN ACK)，告訴發送者它已收到訊息。
 3.最終電腦發送另一條訊息(ACK RECEIVED)，確認訊息回到接收者。
-
+這個過程一經完成就可以開始傳輸資料了。
 ```
 ```
 TCP vs UDP Comparison
@@ -481,12 +481,16 @@ SSL, TLS, HTTP, HTTPS Explained
 https://www.youtube.com/watch?v=hExRDVZHhig
 ```
 
-###  Proxy Server
+###  Proxy Server(代理伺服器)
 ```
 What is a Proxy Server?
 https://www.youtube.com/watch?v=5cPIukqXe5w
 ```
-
+```
+答:
+1.它可以讓你匿名上網，隱藏你的IP位址，保護你的隱私。
+2.它可以簡單又快速的找回儲存在緩衝資料區的資料。
+```
 ### FTP (File Transfer Protocol), SFTP, TFTP Explained.
 ```
 FTP (File Transfer Protocol), SFTP, TFTP Explained.
