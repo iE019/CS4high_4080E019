@@ -109,7 +109,11 @@ IEEE 802.7：寬頻TAG（Broadband LAN using Coaxial Cable）
 IEEE 802.8：光纖分散式資料介面（FDDI）
 IEEE 802.9：綜合業務區域網路（Integrated Services LAN）
 IEEE 802.10：區域網路網路安全（Interoperable LAN Security）
+
 [超級重要]IEEE 802.11：無線區域網路（Wireless LAN & Mesh）
+IEEE 802.11是現今無線區域網路通用的標準，它是由國際電機電子工程學會（IEEE）所定義的無線網路通信的標準。
+雖然經常將Wi-Fi與802.11混為一談，但兩者並不等同。
+
 IEEE 802.12：需求優先級（Demand priority）
 IEEE 802.13：（未使用）
 IEEE 802.14：電纜數據機（Cable modems）
@@ -170,6 +174,25 @@ ICMP 封包格式，其各欄位功能如下：
 17 Address Mask Request（位址遮罩要求）
 18 Address Mask Reply（位址遮罩回覆）
 ```
+
+### Type=3[Destination Unreachable（目的地無法到達）]的 code欄位
+```
+ Code 欄位:註明無法到達目的地的原因：
+● 0: Network Unreachable（無法到達目的網路）
+● 1: Host Unreachable（無法到達目的主機）
+● 2: Protocol Unreachable（通訊協定不存在）
+● 3: Port Unreachable（無法到達連接埠）
+● 4: Fragmentation Needed and DF set（資料需分割並設定不可分割位元）
+● 5: Source Route Failed（來源路徑選擇失敗）
+● 6: Destination Network Unknown（無法識別目的地網路）
+● 7: Destination Host Unknown（無法識別目的地主機）
+● 8: Source Host Isolated（來源主機被隔離）
+● 9: Communication with Destination Network Administratively Prohibited（管理上禁止和目的地網路通訊）
+● 10: Communication with Destination Host Administratively Prohibited（管理上禁止和目的地主機通訊）
+● 11: Network Unreachable for Type of Service（無法到達此型態的網路服務）
+● 12: Host Unreachable for Type of Service（無法到達此型態的主機服務）
+```
+
 ### ICMP 封裝
 
 ![ICMP 封裝](icmp_encap.gif)
@@ -195,6 +218,25 @@ tracert www.pchome.com.tw
   6     *        *        *     要求等候逾時。
   7     *        *        *     要求等候逾時。
 ```
+```
+作業:tracert www.ksu.edu.tw
+Microsoft Windows [版本 10.0.17134.590]
+(c) 2018 Microsoft Corporation. 著作權所有，並保留一切權利。
+
+C:\Users\KSUIE>tracert www.ksu.edu.tw
+
+在上限 30 個躍點上
+追蹤 www.ksu.edu.tw [120.114.100.65] 的路由:
+
+  1    <1 ms     1 ms    <1 ms  172.20.155.254
+  2    <1 ms    <1 ms    <1 ms  120-114-50-230.ksu.edu.tw [120.114.50.230]
+  3    <1 ms    <1 ms    <1 ms  eng.www.ksu.edu.tw [120.114.100.65]
+
+追蹤完成。
+
+```
+
+
 ### TCP vs UDP 
 ```
 TCP vs UDP Comparison
