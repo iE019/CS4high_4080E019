@@ -43,12 +43,12 @@ Layer-7: L7 switch, proxy
 ```
 近距離無線通訊（英語：Near-field communication，NFC），又簡稱近距離通訊或近場通訊，是一套通訊協定，
 讓兩個電子裝置（其中一個通常是行動裝置，例如智慧型手機）在相距幾公分之內進行通訊。
-例:手機付款
+例:手機付款、信用卡
 ```
 ```
 無線射頻辨識（英語：Radio Frequency IDentification，縮寫：RFID）是一種無線通訊技術，
 可以通過無線電訊號識別特定目標並讀寫相關數據，而無需識別系統與特定目標之間建立機械或者光學接觸。
-例:收費站
+例:收費站、一卡通
 ```
 
 # 網路協定:
@@ -66,11 +66,11 @@ presentation layer	例如XDR、ASN.1、SMB、AFP、NCP
 session layer	例如ASAP、ISO 8327 / CCITT X.225、RPC、NetBIOS、ASP、IGMP、Winsock、BSD sockets
 4	傳輸層
 transport layer	例如TCP、UDP、RTP、SCTP、SPX、ATP、IL
-3	網路層
+3	網路層(決定資料的傳輸路徑)
 network layer	例如IP、ICMP、IPX、BGP、OSPF、RIP、IGRP、EIGRP、ARP、RARP、X.25
-2	資料連結層
+2	資料連結層(錯誤偵測及改錯方法)
 data link layer	例如乙太網路、權杖環、HDLC、影格中繼、ISDN、ATM、IEEE 802.11、FDDI、PPP
-1	實體層
+1	實體層(訊號放大，位元資料0和1)
 physical layer	例如線路、無線電、光纖
 ```
 ### TCP/IP MODEL
@@ -352,8 +352,14 @@ C:\Users\KSUIE>tracert www.ksu.edu.tw
 # Transport層協定:TCP(可靠的reliable) vs UDP (不可靠的unreliable)
 ```
 何謂(可靠的reliable) vs (不可靠的unreliable)?
+
+
 都(不可靠的unreliable)了,為何要用??
+
+
 如何達到(可靠的reliable)?<----封包格式的設計
+
+
 ```
 ```
 TCP vs UDP Comparison
@@ -410,7 +416,7 @@ https://www.youtube.com/watch?v=uwoD5YsGACg
 
 傳輸控制協定（英語：Transmission Control Protocol，縮寫：TCP）是一種連接導向的、可靠的、基於位元組流的傳輸層通信協定，由IETF的RFC 793定義。在簡化的電腦網路OSI模型中，它完成第四層傳輸層(Layer-4 Transport)所指定的功能。
 
-用戶資料報協定（UDP）是同一層(Layer-4 Transport)內另一個重要的傳輸協定。
+用戶資料包協定（UDP）是同一層(Layer-4 Transport)內另一個重要的傳輸協定。
 ```
 
 
