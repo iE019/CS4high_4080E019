@@ -33,23 +33,20 @@ Layer-7: L7 switch, proxy
 
 # 網路協定:
 
+## 必考問答題: Protocol
 ```
-必考問答題: Protocol
 定義資料格式、編碼機制、錯誤處理，以及資料在網路上傳輸的順序。
 ```
 
 ### 名詞解釋題:NFC RFID
 
 ```
-近距離無線通訊（英語：Near-field communication，NFC），又簡稱近距離通訊或近場通訊，是一套通訊協定，讓兩個電子裝置（其中一個通常是行動裝置，例如智慧型手機）在相距幾公分之內進行通訊。[
+近距離無線通訊（英語：Near-field communication，NFC），又簡稱近距離通訊或近場通訊，是一套通訊協定，
+讓兩個電子裝置（其中一個通常是行動裝置，例如智慧型手機）在相距幾公分之內進行通訊。
 ```
 ```
-無線射頻辨識（英語：Radio Frequency IDentification，縮寫：RFID）是一種無線通訊技術，可以通過無線電訊號識別特定目標並讀寫相關數據，
-而無需識別系統與特定目標之間建立機械或者光學接觸。
-```
-```
-近距離無線通訊（英語：Near-field communication，NFC）
-https://en.wikipedia.org/wiki/Radio-frequency_identification
+無線射頻辨識（英語：Radio Frequency IDentification，縮寫：RFID）是一種無線通訊技術，
+可以通過無線電訊號識別特定目標並讀寫相關數據，而無需識別系統與特定目標之間建立機械或者光學接觸。
 ```
 
 # 網路協定:
