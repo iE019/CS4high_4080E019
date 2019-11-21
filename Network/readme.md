@@ -39,6 +39,37 @@ Layer-7: L7 switch, proxy
 ```
 OSI Model Explained | OSI Animation | Open System Interconnection Model | OSI 7 layers | TechTerms
 https://www.youtube.com/watch?v=vv4y_uOneC0
+
+7	應用層
+application layer	例如HTTP、SMTP、SNMP、FTP、Telnet、SIP、SSH、NFS、RTSP、XMPP、Whois、ENRP、TLS
+6	表現層
+presentation layer	例如XDR、ASN.1、SMB、AFP、NCP
+5	會議層
+session layer	例如ASAP、ISO 8327 / CCITT X.225、RPC、NetBIOS、ASP、IGMP、Winsock、BSD sockets
+4	傳輸層
+transport layer	例如TCP、UDP、RTP、SCTP、SPX、ATP、IL
+3	網路層
+network layer	例如IP、ICMP、IPX、BGP、OSPF、RIP、IGRP、EIGRP、ARP、RARP、X.25
+2	資料連結層
+data link layer	例如乙太網路、權杖環、HDLC、影格中繼、ISDN、ATM、IEEE 802.11、FDDI、PPP
+1	實體層
+physical layer	例如線路、無線電、光纖
+```
+###TCP/IP MODEL
+```
+
+4	應用層
+application layer	例如HTTP、FTP、DNS
+（如BGP和RIP這樣的路由協定，儘管由於各種各樣的原因它們分別執行在TCP和UDP上，仍然可以將它們看作網路層的一部分）
+3	傳輸層
+transport layer	例如TCP、UDP、RTP、SCTP
+（如OSPF這樣的路由協定，儘管執行在IP上也可以看作是網路層的一部分）
+2	網路互連層
+internet layer	對於TCP/IP來說這是網際網路協定（IP）
+（如ICMP和IGMP這樣的必須協定儘管執行在IP上，也仍然可以看作是網路互連層的一部分；ARP不執行在IP上）
+1	網路存取(連結)層
+Network Access(link) layer	例如乙太網路、Wi-Fi、MPLS等。
+
 ```
 
 ### TCP/IP
