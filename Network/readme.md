@@ -55,7 +55,7 @@ data link layer	例如乙太網路、權杖環、HDLC、影格中繼、ISDN、AT
 1	實體層
 physical layer	例如線路、無線電、光纖
 ```
-###TCP/IP MODEL
+### TCP/IP MODEL
 ```
 
 4	應用層
@@ -199,6 +199,10 @@ tracert www.pchome.com.tw
 ```
 TCP vs UDP Comparison
 https://www.youtube.com/watch?v=uwoD5YsGACg
+
+傳輸控制協定（英語：Transmission Control Protocol，縮寫：TCP）是一種連接導向的、可靠的、基於位元組流的傳輸層通信協定，由IETF的RFC 793定義。在簡化的電腦網路OSI模型中，它完成第四層傳輸層(Layer-4 Transport)所指定的功能。
+
+用戶資料報協定（UDP）是同一層(Layer-4 Transport)內另一個重要的傳輸協定。
 ```
 
 
