@@ -33,7 +33,7 @@ Layer-7: L7 switch, proxy
 
 # 網路協定:
 
-## 必考問答題: Protocol
+## 必考問答題: Protocol(協定)
 ```
 定義資料格式、編碼機制、錯誤處理，以及資料在網路上傳輸的順序。
 ```
@@ -43,10 +43,12 @@ Layer-7: L7 switch, proxy
 ```
 近距離無線通訊（英語：Near-field communication，NFC），又簡稱近距離通訊或近場通訊，是一套通訊協定，
 讓兩個電子裝置（其中一個通常是行動裝置，例如智慧型手機）在相距幾公分之內進行通訊。
+例:手機付款
 ```
 ```
 無線射頻辨識（英語：Radio Frequency IDentification，縮寫：RFID）是一種無線通訊技術，
 可以通過無線電訊號識別特定目標並讀寫相關數據，而無需識別系統與特定目標之間建立機械或者光學接觸。
+例:收費站
 ```
 
 # 網路協定:
@@ -56,9 +58,9 @@ Layer-7: L7 switch, proxy
 OSI Model Explained | OSI Animation | Open System Interconnection Model | OSI 7 layers | TechTerms
 https://www.youtube.com/watch?v=vv4y_uOneC0
 
-7	應用層
+7	應用層(App的溝通介面，接收及傳送資料)
 application layer	例如HTTP、SMTP、SNMP、FTP、Telnet、SIP、SSH、NFS、RTSP、XMPP、Whois、ENRP、TLS
-6	表現層
+6	表現層(加密及解密、壓縮及解壓縮、編碼及解碼)
 presentation layer	例如XDR、ASN.1、SMB、AFP、NCP
 5	會議層
 session layer	例如ASAP、ISO 8327 / CCITT X.225、RPC、NetBIOS、ASP、IGMP、Winsock、BSD sockets
@@ -346,6 +348,59 @@ C:\Users\KSUIE>tracert www.ksu.edu.tw
 追蹤完成。
 
 ```
+
+# Transport層協定:TCP(可靠的reliable) vs UDP (不可靠的unreliable)
+```
+何謂(可靠的reliable) vs (不可靠的unreliable)?
+都(不可靠的unreliable)了,為何要用??
+如何達到(可靠的reliable)?<----封包格式的設計
+```
+```
+TCP vs UDP Comparison
+https://www.youtube.com/watch?v=uwoD5YsGACg
+```
+## 不可靠的unreliable  UDP
+```
+https://en.wikipedia.org/wiki/User_Datagram_Protocol
+
+
+許多關鍵的網際網路應用程式使用UDP，包括：
+域名系統（DNS），其中查詢階段必須快速，並且只包含單個請求，後跟單個回覆封包；
+動態主機組態協定（DHCP），用於動態分配IP位址；
+簡單網路管理協定（SNMP）；
+路由資訊協定（RIP）。
+```
+### UDP Format
+
+![UDP header format](udp_header.gif)
+```
+UDP封頭包括4個欄位，每個欄位占用2個位元組（即16個位元）。
+在IPv4中，「來源連接埠」和「校驗和」是可選欄位（以粉色背景標出）。
+在IPv6中，只有來源連接埠是可選欄位。 
+各16bit的來源埠和目的埠用來標記傳送和接受的應用行程。
+
+UDP不需要應答，所以來源埠是可選的，如果來源埠不用，那麼置為零。
+在目的埠後面是長度固定的以位元組為單位的長度域，用來指定UDP資料報包括資料部分的長度，長度最小值為8byte。
+首部剩下地16bit是用來對首部和資料部分一起做校驗和（Checksum）的，這部分是可選的，
+但在實際應用中一般都使用這一功能。
+
+[3]封包長度
+該欄位指定UDP封頭和資料總共占用的長度。
+可能的最小長度是8位元組，因為UDP封頭已經占用了8位元組。
+由於這個欄位的存在，UDP封包總長不可能超過65535位元組（包括8位元組的封頭，和65527位元組的資料）。
+實際上通過IPv4協定傳輸時，由於IPv4的頭部資訊要占用20位元組，因此資料長度不可能超過65507位元組
+               （65,535 − 8位元組UDP封頭 − 20位元組IP頭部）。
+在IPv6的jumbogram中，是有可能傳輸超過65535位元組的UDP封包的。
+依據RFC 2675，如果這種情況發生，封包長度應被填寫為0。
+
+
+[4]校驗和checksum
+校驗和欄位可以用於發現頭部資訊和資料中的傳輸錯誤。
+該欄位在IPv4中是可選的，在IPv6中則是強制的。
+如果不使用校驗和，該欄位應被填充為全0。
+```
+## TCP
+![TCP header format](tcp_header.gif)
 
 
 ### TCP vs UDP 
