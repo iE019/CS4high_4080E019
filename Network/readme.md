@@ -16,6 +16,9 @@ https://www.youtube.com/watch?v=zbqrNg4C98U
 ```
 What is a DMZ? (Demilitarized Zone)
 https://www.youtube.com/watch?v=dqlzQXo1wqo
+
+DMZ(非軍事化區域)用於提高安全性。
+把公司的伺服器架設在第一層和第二層防火牆的中間，使駭客無法輕易的進入伺服器及公司內部的電腦網路。
 ```
 ```
 NAT Explained(解釋) - Network Address Translation(網路地址轉換)
@@ -23,6 +26,7 @@ https://www.youtube.com/watch?v=FTUV0t6JaDA
 
 NAT(網路地址轉換)這是路由器使用的服務。
 私有IP地址通過路由器的NAT轉換成公用IP地址。
+
 public to private(從公用的到私人的)
 private to public(從私人的到公用的)
 
@@ -492,7 +496,7 @@ https://www.youtube.com/watch?v=hExRDVZHhig
 HTTP(超文本協議)是不安全的網站，因為你所傳輸的資料是純文本傳輸，所以可能會被駭客竊取資料。
 HTTPS(安全超文本協議)是安全的網站，通過使用加密算法對要傳輸的資料進行加密，使此資料受到保護。
 SSL(安全套接字層)是HTTPS的安全協議之一，它是使用公共密鑰加密來保護你在Internet所傳輸的資料。
-TLS(傳輸層安全性)是一種行業標準加密協議，是SSL的後繼技術，與SSL相同的規範，對服務器和客戶端進行身分驗證，加密資料。
+TLS(傳輸層安全性)是一種行業標準加密協議，是SSL的後繼技術，與SSL相同的規範，對伺服器和客戶端進行身分驗證，加密資料。
 ```
 
 ###  Proxy Server(代理伺服器)
