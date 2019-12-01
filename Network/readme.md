@@ -11,8 +11,10 @@ https://www.youtube.com/watch?v=4_zSIXb7tLQ
 
 ```
 # Network Topologies(網路拓撲)
+```
 (Star, Bus, Ring, Mesh, Ad hoc, Infrastructure, & Wireless Mesh Topology)
-  https://www.youtube.com/watch?v=zbqrNg4C98U
+https://www.youtube.com/watch?v=zbqrNg4C98U
+```
 
 ## 星型拓撲(Star Topology)
 ```
@@ -33,7 +35,8 @@ https://www.youtube.com/watch?v=4_zSIXb7tLQ
 
 ## 匯流排拓撲（Bus Topology）
 ```
-匯流排拓撲(Bus Topology)，又稱匯流排網路(Bus Network)；該網路之節點直接連接到一個共用的半雙工的線性網路上。由於該拓撲是由一條主纜線串接所有的電腦或其他網路設備，因此也稱為線性匯流排(Linear Bus)
+匯流排拓撲(Bus Topology)，又稱匯流排網路(Bus Network)；該網路之節點直接連接到一個共用的半雙工的線性網路上。
+由於該拓撲是由一條主纜線串接所有的電腦或其他網路設備，因此也稱為線性匯流排(Linear Bus)
 
 優點:
 1.非常容易將電腦或周邊設備連上線性匯流排
@@ -76,20 +79,52 @@ https://www.youtube.com/watch?v=4_zSIXb7tLQ
 4. 由66顆衛星組成的[銥衛星]系統本身就是一個網狀網路系統，相鄰的銥衛星會互相連接成網狀拓撲。一通電話會經由銥衛星網狀網路路由通往目的端，完全不需要地面通訊站的協助，這樣減少了傳輸距離也減少了通訊延遲。
 ```
 
+## 無線隨意網路(Ad hoc)
+```
+無線隨意網路)Wireless ad hoc network，mobile ad hoc network, 縮寫為WANET, MANET），又稱無線臨時網路，是一種分散式的無線網路系統。
+ad hoc源自拉丁文，原意是臨時、專用、特設的。它被稱為ad hoc，是因為這種網路系統是臨時形成，由節點與節點間的動態連結所形成。它不需要依賴一個既存的網路架構，像是有線系統的路由器，或是無線系統的無線網路基地台。相反的，它每一個節點，都有能力轉送網路封包給其他節點（這稱為路由）。
+
+實際應用:
+無線臨時網路早期的應用程式 FTP, TELNET
+無線臨時網路早期的多媒體應用 MPEG
+無人機隨意網路 - (國防用途)
+跳躍的地雷 - (國防用途)
+智慧型家居連接 - Smart Homes
+災難救援 - 地震，洪水等
+道路交通事故救援
+智慧型手機同行網路
+智慧型城市的智慧型路燈
+感測器網路
+陸軍無線隨意網路
+機器人無線隨意網路
+```
+
+##
+```
+
+```
+
 ##
 ```
 
 ```
 
 # What is a DMZ? (Demilitarized Zone)
-  https://www.youtube.com/watch?v=dqlzQXo1wqo
+```
+https://www.youtube.com/watch?v=dqlzQXo1wqo
+```
+
 ```
 DMZ(非軍事化區域)用於提高安全性。
 把公司的伺服器架設在第一層和第二層防火牆的中間，使駭客無法輕易的進入伺服器及公司內部的電腦網路。
 ```
 
-# NAT Explained(解釋) - Network Address Translation(網路地址轉換)
-  https://www.youtube.com/watch?v=FTUV0t6JaDA
+# NAT Explained(解釋)
+```
+Network Address Translation(網路地址轉換)
+https://www.youtube.com/watch?v=FTUV0t6JaDA
+```
+
 ```
 NAT(網路地址轉換)這是路由器使用的服務。
 私有IP地址通過路由器的NAT轉換成公用IP地址。
