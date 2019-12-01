@@ -8,9 +8,26 @@ https://markdown.tw/
 Network Types: LAN, WAN, PAN, CAN, MAN, SAN, WLAN
 https://www.youtube.com/watch?v=4_zSIXb7tLQ
 ```
+# Network Topologies(網路拓撲) (Star, Bus, Ring, Mesh, Ad hoc, Infrastructure, & Wireless Mesh Topology)
+  https://www.youtube.com/watch?v=zbqrNg4C98U
+
 ```
-Network Topologies (Star, Bus, Ring, Mesh, Ad hoc, Infrastructure, & Wireless Mesh Topology)
-https://www.youtube.com/watch?v=zbqrNg4C98U
+星型拓撲(Star Topology)是指網路中的各節點設備通過一個網絡集中設備（如集線器HUB或者交換機Switch）連接在一起，各節點呈星狀分布的網絡連接方式。
+這種拓撲結構主要應用於IEEE 802.2、IEEE 802.3標準的乙太網中。
+
+星型結構的優點：
+1.網絡結構簡單，便於管理、維護和調試。
+2.控制簡單，添加或刪除某個站點非常容易。
+3.集中管理，可方便地提供服務和網絡重新配置。
+4.每個站點直接連到中央節點，容易檢測和隔離故障。
+
+星型結構的缺點：
+1.線路利用率不高，一條線路只被該線路上的中央節點和一個節點使用。
+2.中央節點負荷太重，而且當中央節點產生故障時，全網將不能工作，對中央節點的可靠性和冗餘度要求太高
+3.安裝和維護費用高，需要大量電纜
+```
+```
+
 ```
 
 ```
