@@ -1,6 +1,7 @@
 # 
 ```
 184. Which option to the wget command logs output?
+wget命令的哪個選項紀錄輸出?
 A. -r
 B. -o
 C. -b
@@ -9,6 +10,7 @@ D. -k
 
 186. You need to compare two files to determine if there are differences between them. Which
 command can be used for this purpose?
+您需要比較兩個文件，以確定它們之間是否存在差異。哪個命令可以用於此目的?
 A. dcat
 B. tar
 C. diff
@@ -18,6 +20,7 @@ D. dtool
 191. You need to redirect output to a file, but rather than overwriting the existing file, the
 output should be appended instead. Which character combination is used to indicate that
 STDOUT should be appended?
+您需要將輸出重定向到一個文件，但是應該追加輸出，而不是覆蓋現有文件。使用哪個字符組合來表示應該追加標準輸出?
 A. <>
 B. a>
 C. >a
