@@ -18,8 +18,16 @@ What is a DMZ? (Demilitarized Zone)
 https://www.youtube.com/watch?v=dqlzQXo1wqo
 ```
 ```
-NAT Explained - Network Address Translation
+NAT Explained(解釋) - Network Address Translation(網路地址轉換)
 https://www.youtube.com/watch?v=FTUV0t6JaDA
+
+NAT(網路地址轉換)這是路由器使用的服務。
+私有IP地址通過路由器的NAT轉換成公用IP地址。
+public to private(從公用的到私人的)
+private to public(從私人的到公用的)
+
+公用IP在Internet上公開註冊，所以可以直接連上網路，但數量有限，則私有IP地址未公開註冊，不能直接連上網路。
+為了防止公用IP短缺，又要能省錢的使用公用IP，所以，在家中或辦公室使用路由器的NAT服務。
 ```
 # 網路硬體
 
