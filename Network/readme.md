@@ -407,7 +407,7 @@ C:\Users\KSUIE>tracert www.ksu.edu.tw
 
 都"UDP不可靠的unreliable"了,為何要用??
 答:
-因為UDP比TCP，經常在電腦遊戲或其他看重速度而允許少量資料損失的場合，就會使用。
+因為UDP比TCP快，經常在電腦遊戲或其他看重速度而允許少量資料損失的場合，就會使用。
 
 如何達到(可靠的reliable)?<----封包格式的設計
 1.電腦發送一條名為SYN的訊息。
@@ -479,6 +479,12 @@ https://www.youtube.com/watch?v=uwoD5YsGACg
 ```
 SSL, TLS, HTTP, HTTPS Explained
 https://www.youtube.com/watch?v=hExRDVZHhig
+```
+```
+HTTP(超文本協議)是不安全的網站，因為你所傳輸的資料是純文本傳輸，所以可能會被駭客竊取資料。
+HTTPS(安全超文本協議)是安全的網站，通過使用加密算法對要傳輸的資料進行加密，使此資料受到保護。
+SSL(安全套接字層)是HTTPS的安全協議之一，它是使用公共密鑰加密來保護你在Internet所傳輸的資料。
+TLS(傳輸層安全性)
 ```
 
 ###  Proxy Server(代理伺服器)
