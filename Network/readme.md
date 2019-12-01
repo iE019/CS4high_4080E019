@@ -3,13 +3,49 @@
 Markdown文件
 https://markdown.tw/
 ```
-# 
+# Network Types(網路類型)
 ```
 Network Types: LAN, WAN, PAN, CAN, MAN, SAN, WLAN
 https://www.youtube.com/watch?v=4_zSIXb7tLQ
+```
 
+## LAN(區域網路)
+```
+區域網路(Local Area Network，LAN)是連接住宅、學校、實驗室、大學校園或辦公大樓等有限區域內電腦的電腦網路 [1]。
+```
+
+## WAN(廣域網路)
+```
+廣域網路(Wide Area Network，WAN)，又稱外網、公網。它是連接不同地區區域網路或都會網路電腦通信的遠端網。通常跨接很大的物理範圍，所覆蓋的範圍從幾十公里到幾千公里，它能連接多個地區、城市和國家，或橫跨幾個洲並能提供遠距離通信，形成國際性的遠端網路。
+廣域網路並不等同於網際網路。
+```
+
+## PAN(個人區域網)
+```
+個人區域網路(Personal Area Network，PAN)，指個人範圍（隨身攜帶或數米之內）的計算裝置（如:筆記型電腦、手機等）組成的通信網路。
+個人區域網路即可用於這些裝置之間互相交換資料，也可以用於連接到高層網路或網際網路。
+```
+
+## CAN(校園網路)
+```
+校園網路(Campus network，CAN)是一個在有限的地理區域相互連接的區域網路組成的網路(交換器、 路由器)和傳媒體(光學纖維、5類電纜等等)幾乎由園區承租人/所有人(企業、大學、政府等)完全擁有的。
+```
+
+##
+```
 
 ```
+
+##
+```
+
+```
+
+##
+```
+
+```
+
 # Network Topologies(網路拓撲)
 ```
 (Star, Bus, Ring, Mesh, Ad hoc, Infrastructure, & Wireless Mesh Topology)
@@ -97,16 +133,6 @@ ad hoc源自拉丁文，原意是臨時、專用、特設的。它被稱為ad ho
 感測器網路
 陸軍無線隨意網路
 機器人無線隨意網路
-```
-
-##
-```
-
-```
-
-##
-```
-
 ```
 
 # What is a DMZ? (Demilitarized Zone)
