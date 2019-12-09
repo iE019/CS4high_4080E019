@@ -1,3 +1,4 @@
+```
 import java.util.Scanner; //匯入Scanner類別庫
 public class DoMath {//類別開始
 
@@ -58,3 +59,4 @@ public class DoMath {//類別開始
 
 	}
 }
+```
