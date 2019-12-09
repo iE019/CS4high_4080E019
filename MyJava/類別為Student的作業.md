@@ -1,4 +1,4 @@
-
+```
 public class Student {//類別學生開始
 	private String name;//宣告私有的全域變數 姓名
 	private String id;//宣告私有的全域變數 學號
@@ -54,3 +54,4 @@ public static void main(String[]args) {//主函式開始
 }//主函式結束
 
 }//類別Student結束
+```
