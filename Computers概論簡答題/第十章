@@ -1,0 +1,61 @@
+# 第十章 數位生活的安全、道德和隱私
+
+### 1.請列出常見的"數位安全風險"
+```
+1.Internet And Network attack :
+   virus attack(病毒攻擊)
+   malware attack(惡意軟體攻擊)
+   botnet(殭屍網路)
+   Dos攻擊(DoS attack,阻斷服務攻擊)
+   DDoS(distributed DoS,分散式DoS)attack
+   back door(後門程式)
+   spoofing(假冒)
+       IP spoofing(IP假冒)
+       e-mail spoofing(電子郵件假冒)
+
+2.未經授權"存取"及"使用":
+    unauthorized "access"(未經授權"存取"):
+    指在沒有足夠權限的情況下使用Computer or Network
+    unauthorized "use"(未經授權"使用")
+    指將Computer或其他Data使用在未經核准或
+    可能違法的活動上。  
+
+3.Hardware(硬體)竊盜:
+   例:Computer被偷
+
+4.Software(軟體)竊盜
+   例:非法copy
+
+5.Information(資訊)竊取
+   例:ID(身分證)被盜用
+
+6.System(系統)故障
+   例:雷擊
+```
+### 2.請說明駭客(hacker)與破壞客(cracker)的差異
+```
+hacker是指"非法存取"Computer or Network的人。
+則cracker同上，再加上他們還會蓄意破壞Data、
+竊取Information或進行其他惡意行為。
+```
+### 3.請說明企業機構如何應用"存取控制(access control)"
+和"查核追蹤紀錄(audit trail)"機制。
+```
+access control是一種定義Who can access computer、
+device(裝置)或Network、When可以access，
+以及access時可執行What動作的安全規範。
+
+audit trail裡面紀錄"成功"和"失敗"的access嘗試。
+```                             
+### 4.何謂"殭屍網路(botnet)"?
+```
+botnet是由一群連上Network的Computer或
+行動device(裝置)，
+被利用成為惡意attack其它Network的Network一份子
+所組成。
+```
+### 5."Dos攻擊"的目的是什麼?
+```
+DoS attack是一種目的在於使Computer無法access 
+Internet服務的attack行為。
+```
